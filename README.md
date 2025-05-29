@@ -54,36 +54,16 @@
 
 ---
 
-## 🚀 Yêu cầu phi chức năng
-
-- **Hiệu năng**: 100+ người dùng đồng thời, trang chủ tải <2s, trang highlight <3s, sử dụng cache.
-- **Bảo mật**: Mật khẩu mã hóa (bcrypt), phân quyền rõ ràng, HTTPS, JWT, kiểm thử bảo mật định kỳ.
-- **Khả năng mở rộng**: Thiết kế module hóa, hỗ trợ tăng lượng user và dữ liệu.
-- **Dễ bảo trì**: Code rõ ràng, tài liệu đầy đủ, backup định kỳ.
-- **Phục hồi**: Tự động backup và khôi phục nhanh khi có sự cố.
-- **Giao diện**: Đơn giản, dễ dùng, hỗ trợ mobile, ngôn ngữ mặc định: tiếng Việt (tiếng Anh sẽ bổ sung).
-
----
-
 ## 🏗️ Kiến trúc & Công nghệ
 
-| Thành phần  | Công nghệ sử dụng |
-|-------------|------------------|
-| **Frontend** | React.js |
-| **Backend** | Spring Boot 3.x, Spring Security, JWT, Swagger/OpenAPI, Spring Cache (Redis), Spring Scheduler |
-| **Database** | PostgreSQL (chính), Redis (cache) |
-| **Lưu trữ file** | AWS S3 / Google Cloud Storage (video highlight) |
-| **DevOps** | Docker Compose, CI/CD (GitHub Actions, GitLab CI), giám sát với Prometheus, Grafana |
-| **Bảo mật** | HTTPS, bcrypt, kiểm thử tự động |
-
----
-
-## 📏 Tiêu chí chất lượng
-
-- **Độ tin cậy**: Uptime ≥ 99.9%, MTBF ≥ 1000h, MTTR ≤ 5 phút
-- **Chính xác dữ liệu**: ≥ 99.5%, xử lý lỗi ≤ 24h
-- **Trải nghiệm người dùng**: Usability score ≥ 85%, thao tác thành công ≤ 3 lần thử
-- **Khả năng chịu tải**: ≥ 1000 requests/second, phục hồi nhanh khi gặp lỗi
+| Thành phần  | Công nghệ sử dụng                                     |
+|-------------|-------------------------------------------------------|
+| **Frontend** | Đang hoàn thiện                                       |
+| **Backend** | Spring Boot 3.x, Spring Security, JWT, Swagger/OpenAP |
+| **Database** | PostgreSQL (chính)                                    |
+| **Lưu trữ file** | AWS S3 / Google Cloud Storage (video highlight)       |
+| **DevOps** | Docker Compose                                        |
+| **Bảo mật** | HTTPS                                                 |
 
 ---
 
