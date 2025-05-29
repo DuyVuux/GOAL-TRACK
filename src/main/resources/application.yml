@@ -1,0 +1,39 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /goaltrack
+spring:
+  application:
+    name: GOAL-TRACK
+  profiles:
+    active: @spring.profiles.active@
+  datasource:
+    url: jdbc:postgresql://localhost:5432/goaltrack_db
+    username: postgres
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+  sendgrid:
+    api-key: ${SENDGRID_API}
+    from-email: ${SENDGRID_FROM_EMAIL}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  level:
+    root: INFO
+    web: INFO
+    # Cấu hình log SQL
+    # org.hibernate.SQL: DEBUG
+    # org.hibernate.type.descriptor.sql.BasicBinder: TRACE

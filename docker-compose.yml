@@ -1,0 +1,23 @@
+services:
+  app:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    image: goal-track-service:v0.0.1-alpha
+    ports:
+      - "8080:8080"
+      - "5005:5005"
+    env_file:
+      - .env
+    networks:
+      - default
+    volumes:
+      - main:/home/goal-track
+
+networks:
+  default:
+    driver: bridge
+
+volumes:
+  main:
+    driver: local

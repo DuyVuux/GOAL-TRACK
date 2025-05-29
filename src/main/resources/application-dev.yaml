@@ -1,0 +1,40 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+  devtools:
+    add-properties: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/goaltrack_db
+    username: postgres
+    password: ${DB_PASSWORD}
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+  sendgrid:
+    api-key: ${SENDGRID_API}
+    from-email: ${SENDGRID_FROM_EMAIL}
+    templateId: d-2221bf7e11bc4e7e94233cb1396d85d1
+    verificationLink: http://localhost:8080/goaltrack/user/confirm-email
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+openapi:
+  service:
+    api-docs: backend-service
+    server: http://localhost:8080/goaltrack
+    title: GOAL TRACK
+    version: 1.0.0
+
+jwt:
+  expiryMinutes: 1
+  expiryDay: 14
+  accessKey: ${JWT_ACCESS_KEY}
+  refreshKey: ${JWT_REFRESH_KEY}
