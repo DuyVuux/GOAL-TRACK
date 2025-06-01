@@ -86,4 +86,4 @@
 
 ---
 
-> 🔗 *Có thể tích hợp frontend hoặc app di động một cách đơn giản thông qua các API công khai đã được version hóa.*
+[//]: # (> 🔗 *Có thể tích hợp frontend hoặc app di động một cách đơn giản thông qua các API công khai đã được version hóa.*)
