@@ -37,22 +37,32 @@
 - **Admin Dashboard**  
   Quản lý người dùng, kiểm tra hệ thống (logs, audit), xử lý dữ liệu khẩn cấp.
 
-- **Search & Filter**  
-  Tìm kiếm highlight/trận đấu theo đội, ngày, giải đấu. Hỗ trợ full-text search.
+[//]: # (- **Search & Filter**  )
 
-- **Communication Module**  
-  Gửi email thông báo và thông báo thời gian thực (WebSocket).
+[//]: # (  Tìm kiếm highlight/trận đấu theo đội, ngày, giải đấu. Hỗ trợ full-text search.)
 
-- **API & Documentation**  
-  Sinh tài liệu API tự động bằng Swagger/OpenAPI. Hỗ trợ versioning endpoint.
+[//]: # ()
+[//]: # (- **Communication Module**  )
 
-- **Logging & Analytics**  
-  Ghi log hệ thống, thống kê truy cập, phân tích hành vi người dùng và highlight.
+[//]: # (  Gửi email thông báo và thông báo thời gian thực &#40;WebSocket&#41;.)
 
-- **Scheduler & Automation**  
-  Cron job định kỳ để cập nhật dữ liệu, xoá cache, và backup dữ liệu.
+[//]: # ()
+[//]: # (- **API & Documentation**  )
 
----
+[//]: # (  Sinh tài liệu API tự động bằng Swagger/OpenAPI. Hỗ trợ versioning endpoint.)
+
+[//]: # ()
+[//]: # (- **Logging & Analytics**  )
+
+[//]: # (  Ghi log hệ thống, thống kê truy cập, phân tích hành vi người dùng và highlight.)
+
+[//]: # ()
+[//]: # (- **Scheduler & Automation**  )
+
+[//]: # (  Cron job định kỳ để cập nhật dữ liệu, xoá cache, và backup dữ liệu.)
+
+[//]: # ()
+[//]: # (---)
 
 ## 🏗️ Kiến trúc & Công nghệ
 
@@ -61,9 +71,12 @@
 | **Frontend** | Đang hoàn thiện                                       |
 | **Backend** | Spring Boot 3.x, Spring Security, JWT, Swagger/OpenAP |
 | **Database** | PostgreSQL (chính)                                    |
-| **Lưu trữ file** | AWS S3 / Google Cloud Storage (video highlight)       |
-| **DevOps** | Docker Compose                                        |
-| **Bảo mật** | HTTPS                                                 |
+
+[//]: # (| **Lưu trữ file** | AWS S3 / Google Cloud Storage &#40;video highlight&#41;       |)
+
+[//]: # (| **DevOps** | Docker Compose                                        |)
+
+[//]: # (| **Bảo mật** | HTTPS                                                 |)
 
 ---
 
